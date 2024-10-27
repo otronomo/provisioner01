@@ -6,4 +6,4 @@ services:
         build: ./master_ct/
         environment:
             - TZ=Europe/Madrid
-        command: bash -c "git clone https://github.com/otronomo/provisioner01.git && cd provisioner01 && chmod +x launcher.sh && ./launcher.sh
+        command: bash -c "git clone https://github.com/otronomo/provisioner01.git && cd provisioner01 && chmod +x launcher.sh && launcher.sh"
