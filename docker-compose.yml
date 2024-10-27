@@ -1,9 +1,11 @@
 name: provisioner01
 services:
 
+    # LAUNCH WITH: docker compose up --force-recreate
+
     master_ct:
         container_name: master_ct
         build: ./master_ct/
         environment:
             - TZ=Europe/Madrid
-        command: bash -c "git clone https://github.com/otronomo/provisioner01.git && cd provisioner01/ && chmod +x launcher.sh && sh launcher.sh"
+        command: bash -c "git clone https://github.com/otronomo/provisioner01.git && ls -l provisioner01/ && cd provisioner01/ && chmod +x launcher.sh && sh launcher.sh"
